@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/*Estilos do mobile*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, input, button, option{
+  font-family: 'Inter Tight', sans-serif;
+  background-color: #09090B;
+  color: #FAFAFA;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}
+
+body {
+    padding: 40px 20px;
+    max-width: 390px;
+    max-height: 844px;
+    margin: auto;
+}
+
+main {
+    margin: 95px 33px 136px 33px;
+    max-width: 324px;
+    max-height: 576px;
+    border: 1px solid #27272A;
+}
+
+h1 {
+    color: #f4f4f5;
+    margin: 31px 17px 31px 17px;
+    max-width: 290px;
+    max-height: 88px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.Inputs {
+    border: 1px solid #27272A;
+    display: grid;
+    gap: 12px;
+}
+
+input {
+    padding: 18px;
+    background-color: #09090B;
+    border: 1px solid #27272A;
+    border-radius: 8px;
+}
+
+input:focus-within{
+    outline: 2px solid yellowgreen;
+}
+
+.Enviar{
+    margin-top: 25px;
+    max-width: 290px;
+    max-height: 70px;
+    margin: 25px 17px 25px 17px;
+    text-align: center;
+}
+
+button{
+    border: none;
+    padding: 12px 20px;
+    background-color: #AFF445;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #132F00;
+    cursor: pointer;
+}
+
+button:hover{
+    border: 3px solid yellowgreen;
+    font-weight: 500;
+}
+
+span{
+    font-weight: 100;
+    font-size: 13.3px;
+}
