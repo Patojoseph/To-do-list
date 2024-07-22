@@ -28,7 +28,6 @@ main {
     margin: 95px 33px 136px 33px;
     max-width: 324px;
     max-height: 576px;
-    border: 1px solid #27272A;
 }
 
 h1 {
@@ -41,7 +40,6 @@ h1 {
 }
 
 .Inputs {
-    border: 1px solid #27272A;
     display: grid;
     gap: 12px;
 }
@@ -77,11 +75,21 @@ button{
 }
 
 button:hover{
-    border: 3px solid yellowgreen;
+    border: 2px solid yellowgreen;
     font-weight: 500;
 }
 
 span{
-    font-weight: 100;
+    font-weight: 200;
     font-size: 13.3px;
+}
+
+#Entrar_span_button{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#Entrar_span_button:hover{
+    font-weight: 600;
+    font-size: 17px;
 }
