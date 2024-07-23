@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adromeda labs Agenda</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+    <main>
+        <h1>Cadastro</h1>
+        <form>
+            <p name="description" id="description">Olá seja bem vindo !!</p>
+            <div class="inputs">
+                <div class="form-input" name="name" id="nome">
+                    <input type="text" name="name" id="input_nome" required placeholder="Nome:">
+                </div>
+                <div class="form-input">
+                    <input type="number" name="age" id="input_idade" required placeholder="Idade:" max="110" min="5">
+                </div>
+                <div class="form-input">
+                    <input type="email" name="email" id="input_email" required placeholder="Email:">
+                </div>
+                <div class="form-input">
+                    <input type="password" name="password" id="senha" required placeholder="Senha:">
+                </div>
+                <div class="form-input">
+                    <input type="password" name="confirm password" id="confirmar_senha" required placeholder="Confirme sua senha:">
+                </div>
+            </div>
+            <div class="submit" name="submit">
+                <button name="submit_button" id="submit_form"><span>Enviar</span></button>
+            </div>
+        </form>
+        <div class="troca" name="change">
+            <a href="../index.html"><span>Já tem uma conta?</span></a>
+        </div>
+    </main>
+</body>
+</html>
