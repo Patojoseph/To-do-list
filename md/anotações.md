@@ -14,3 +14,5 @@ Fases pra resolver a aplicação
 Anotações 
 - Uma proxima autialização seria para cirar eventos longos nas tarefa, mas enquanto manter só a criação de um evento simples
 esse novo evento longo ele vai ter uma qunatidade de horas e dias que o úsuario vai poder escolher
+
+Começar a fazer e estudar os servidores em sql lite, pra poder fazer essa aplicação ficar mais completa alem de servir muito bem para estudos e anotações
