@@ -28,6 +28,7 @@ let atvs = [
     data: new Date('2024-07-09 12:00'),
     finalizada: false
   },
+  
   {
     nome: 'Gaming session',
     data: new Date('2024-07-10 01:00'),
@@ -135,5 +136,13 @@ const completAtv = (event) => {
 
   atv.finalizada = !atv.finalizada
   
+}
+
+
+const test = () => {
+  return`
+  <p> Olá mundo</p>
+
+`
 }
 
