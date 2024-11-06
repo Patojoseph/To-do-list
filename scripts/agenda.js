@@ -153,3 +153,8 @@ const test = () => {
 `
 }
 
+//parte da do nav
+const AfazeresNav = document.querySelector('#AfazeresNav')
+AfazeresNav.addEventListener("click", function (e) {
+  location.assign("./calendario.html")
+});
