@@ -141,10 +141,11 @@ time.full {
     display: flex;
     max-width: 960px;
     gap: 32px;
+    margin-left: 35%;
   }
 
   main {
-    margin-top: 0;
+    margin-top: 5%;
     flex: 1;
   }
 

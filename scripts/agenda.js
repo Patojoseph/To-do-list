@@ -1,4 +1,5 @@
 
+//formatação dos dias e horas
 const formatador = (data) => {
   return {
     dia: {
@@ -17,22 +18,28 @@ const formatador = (data) => {
 //Coletando os Dados
 const atv = {
   nome: 'Almoço',
-  data: new Date('2024-07-13 13:00'),
+  data: new Date('2024-07-14 13:00'),
   finalizada: true
 };
 //lista, da pra colocar qualuqer coisa aqui dentro
 let atvs = [
   atv,
   {
-    nome: 'Acaedemia em grupo',
-    data: new Date('2024-07-09 12:00'),
+    nome: 'Site de Pweb',
+    data: new Date('2024-011-08 13:00'),
     finalizada: false
   },
   
   {
-    nome: 'Gaming session',
+    nome: 'Jogar lolzinho',
     data: new Date('2024-07-10 01:00'),
     finalizada: true
+  },
+
+  {
+    nome: 'É Natal',
+    data: new Date('2024-12-25 00:00'),
+    finalizada: false
   },
 ];
 
@@ -70,7 +77,7 @@ const itemAtv = (atv) => {
     </time>
 
     <time class="full">${formatar.dia.semana.longo}, 
-    dia ${formatar.dia.numerico}
+    ${formatar.dia.numerico}
     de ${formatar.mes} 
     às ${formatar.hora}
     </time>
@@ -138,7 +145,7 @@ const completAtv = (event) => {
   
 }
 
-
+//teste de lei
 const test = () => {
   return`
   <p> Olá mundo</p>
