@@ -11,12 +11,19 @@
 </head>
 <body>
   <!--Navegação lateral-->
-  <nav>
-    <div id="links">
-      <p id="AfazeresNav">Afazeres</p>
-      <p id="CalendarioNav">Caléndário</p>
+  <div id="links">
+    <div class="iconNav" onclick="Sidebar()">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify" viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><filter x="0%" y="0%" width="100%" height="100%" id="1c49134ce6"><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" color-interpolation-filters="sRGB"/></filter><filter x="0%" y="0%" width="100%" height="100%" id="0200597dac"><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.2126 0.7152 0.0722 0 0" color-interpolation-filters="sRGB"/></filter><clipPath id="81458953e8"><path d="M 0.484375 0 L 29.515625 0 L 29.515625 29 L 0.484375 29 Z M 0.484375 0 " clip-rule="nonzero"/></clipPath><image x="0" y="0" width="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAAAAmJLR0QA/4ePzL8AAABsSURBVDiNY2AYAoCRWYsNj/TP6wxb/+MFmxnfCeK14R2jfxo+K37NIMvh9AaMCoF4fbGO4Tb+gLrF9B+/Df8Z5QPZ8cj/XE+Gs+kPGANTWfFI/57J+F4ArwHvmY7it+EII7Mm3oC6jl//IAEAiYJTMNgS9y8AAAAASUVORK5CYII=" id="2fa6b8f2d4" height="32" preserveAspectRatio="xMidYMid meet"/><mask id="011aa2a16c"><g filter="url(#1c49134ce6)"><g filter="url(#0200597dac)" transform="matrix(0.907258, 0, 0, 0.907258, 0.48387, 0.00000193548)"><image x="0" y="0" width="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAAAAmJLR0QA/4ePzL8AAABsSURBVDiNY2AYAoCRWYsNj/TP6wxb/+MFmxnfCeK14R2jfxo+K37NIMvh9AaMCoF4fbGO4Tb+gLrF9B+/Df8Z5QPZ8cj/XE+Gs+kPGANTWfFI/57J+F4ArwHvmY7it+EII7Mm3oC6jl//IAEAiYJTMNgS9y8AAAAASUVORK5CYII=" height="32" preserveAspectRatio="xMidYMid meet"/></g></g></mask><image x="0" y="0" width="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAABmJLR0QA/wD/AP+gvaeTAAAAMklEQVRIiWNgGAUDDRj///9PUwuYaGr6qAWDwoJRQBCMZrRRC0YBHcBoRhu1YBQMBwAAU68JGWwhI80AAAAASUVORK5CYII=" id="2b917e414f" height="32" preserveAspectRatio="xMidYMid meet"/></defs><g clip-path="url(#81458953e8)"><g mask="url(#011aa2a16c)"><g transform="matrix(0.907258, 0, 0, 0.907258, 0.48387, 0.00000193548)"><image x="0" y="0" width="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAABmJLR0QA/wD/AP+gvaeTAAAAMklEQVRIiWNgGAUDDRj///9PUwuYaGr6qAWDwoJRQBCMZrRRC0YBHcBoRhu1YBQMBwAAU68JGWwhI80AAAAASUVORK5CYII=" height="32" preserveAspectRatio="xMidYMid meet"/></g></g></g></svg>
     </div>
-  </nav>
+    <nav id="sidebar" class="sidebar">
+      <ul>
+        <li id="AfazeresNav">Afazeres</li>
+        <li id="CalendarioNav">Calendário</li>
+        <li id="SobreNav">Sobre</li>
+        <li id="PlanosNav">Planos Premium</li>
+      </ul>
+    </nav>
+  </div>
   <div name="Criar_Tarefa">
     <form onsubmit="salvarAtv(event)">
       <div id="place" class="card-bg">
@@ -33,20 +40,24 @@
             <path d="M5.25008 5.66666C5.4802 5.66666 5.66675 5.48011 5.66675 5.24999C5.66675 5.01987 5.4802 4.83332 5.25008 4.83332C5.01996 4.83332 4.83341 5.01987 4.83341 5.24999C4.83341 5.48011 5.01996 5.66666 5.25008 5.66666Z" stroke="#A1A1AA" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
           <label for="atividade">
-            <input type="text" placeholder="Qual a atividade" name="atividade" required autocomplete="none">
+            <input type="text" placeholder="Qual a atividade" name="atividade" required autocomplete="off">
           </label>
         </div>
         <div name="input_data" class="campos-input">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.66667 1.66666V4.99999M13.3333 1.66666V4.99999M2.5 8.33332H17.5M4.16667 3.33332H15.8333C16.7538 3.33332 17.5 4.07952 17.5 4.99999V16.6667C17.5 17.5871 16.7538 18.3333 15.8333 18.3333H4.16667C3.24619 18.3333 2.5 17.5871 2.5 16.6667V4.99999C2.5 4.07952 3.24619 3.33332 4.16667 3.33332Z" stroke="#A1A1AA" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
+          <label for="date">
             <input type="date" name="data" required>
+          </label>
         </div>
         <div name="Input_hora" class="campos-input">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.00008 3.99999V8.99999L12.3334 10.6667M17.3334 8.99999C17.3334 13.6024 13.6025 17.3333 9.00008 17.3333C4.39771 17.3333 0.666748 13.6024 0.666748 8.99999C0.666748 4.39762 4.39771 0.666656 9.00008 0.666656C13.6025 0.666656 17.3334 4.39762 17.3334 8.99999Z" stroke="#A1A1AA" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
+          <label for="hora">
             <input type="time" name="hora" required>
+          </label>
         </div>
       </div>
       <button>Salvar atividade</button>

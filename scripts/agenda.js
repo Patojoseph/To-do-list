@@ -153,8 +153,16 @@ const test = () => {
 `
 }
 
-//parte da do nav
-const AfazeresNav = document.querySelector('#AfazeresNav')
+//parte do nav
+//fazer isso no calendário para poder voltar.
+const AfazeresNav = document.querySelector('#CalendarioNav')
 AfazeresNav.addEventListener("click", function (e) {
   location.assign("./calendario.html")
 });
+
+function Sidebar() {
+  document.querySelector('.sidebar').classList.toggle('active')
+};
+
+//colocar essa parte quando acabar de fazer todas as alterações
+//alert('O site está passando por atualizações, seja paciente')
