@@ -172,6 +172,10 @@ time.full {
   section .card-bg {
     animation: appear 300ms;
   }
+
+  .iconNav{
+    display: none;
+  }
 }
 
 @keyframes appear {
@@ -208,25 +212,23 @@ button:hover{
   border: 3px solid #5f801d ;
 }
 
-.iconNav{
-  display: none;
-}
 
 
 @media (max-width: 768px){
 
   .sidebar{
-    left: -250px;
     transition: left 0.5s ease;
     width: 300px;
     max-height: 100vh;
     border-radius: 10px;
     background-color: #18181B;
     padding-top: 10px;
+    position: fixed;
+    left: -300px;
   }
 
   .sidebar.active{
-    left: 0;
+    left: 0pc;
   }
 
   .sidebar.active ~ form {
@@ -241,4 +243,5 @@ button:hover{
     width: 32px;
     height: 32px;
   }
-};
+
+}
