@@ -1,4 +1,4 @@
-
+//teste do github
 //formatação dos dias e horas
 const formatador = (data) => {
   return {
@@ -165,4 +165,4 @@ function Sidebar() {
 };
 
 //colocar essa parte quando acabar de fazer todas as alterações
-//alert('O site está passando por atualizações, seja paciente')
+alert('O site está passando por atualizações, seja paciente')
