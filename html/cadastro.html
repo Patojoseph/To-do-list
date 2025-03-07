@@ -9,23 +9,74 @@
 <body>
     <main>
         <h1>Cadastro</h1>
-        <form action="">
+        <form action="" method="get">
             <p name="description" id="description">Olá seja bem vindo !!</p>
             <div class="inputs">
                 <div class="form-input" name="name" id="nome">
-                    <input type="text" name="name" id="input_nome" required placeholder="Nome:">
+                    <label for="name">
+                        <input type="text" name="name" id="input_nome" required placeholder="Nome:">
+                    </label>
+                </div>
+                <div class="form-input" name="cpf" id="cpf">
+                    <label for="cpf">
+                        <input type="text" name="cpf" id="cpf" required placeholder="CPF:">
+                    </label>
+                </div>
+                <div class="form-input" name="estadoCivil" id="estadoCivil">
+                    <label for="estadoCivil">
+                        <select name="estadoCivil" id="selectEstadoCivil">
+                            <option value="1">Solteiro</option>
+                            <option value="2">Casado</option>
+                            <option value="3">Separado</option>
+                            <option value="4">Divorciado</option>
+                            <option value="5">Viúvo</option>
+                        </select>
+                    </label>
                 </div>
                 <div class="form-input">
-                    <input type="number" name="age" id="input_idade" required placeholder="Idade:" max="110" min="5">
+                    <label for="age">
+                        <input type="number" name="age" id="input_idade" required placeholder="Data de nascimento:" max="2020" min="1920">
+                    </label>   
                 </div>
                 <div class="form-input">
-                    <input type="email" name="email" id="input_email" required placeholder="Email:">
+                    <label for="email">
+                        <input type="email" name="email" id="input_email" required placeholder="Email:">
+                    </label>
                 </div>
                 <div class="form-input">
-                    <input type="password" name="password" id="senha" required placeholder="Senha:">
+                    <label for="telefone">
+                        <input type="text" name="telefone" id="tell" required placeholder="Telefone: ex (16) 992..." maxlength="11">
+                    </label>
                 </div>
                 <div class="form-input">
-                    <input type="password" name="confirm password" id="confirmar_senha" required placeholder="Confirme sua senha:">
+                    <label for="sexo">
+                        <select name="sexo" id="sex">
+                            <option value="0" selected> Outros </option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Fêminino</option>
+                        </select>
+                    </label>
+                </div>
+                <!--
+                <div class="repartição">
+                    /......
+                </div>
+                -->
+                <!--Fazer uma separação para o endereço, só pra que fique mais bonitinho no final-->
+                <div class="form-input" id="endereco">
+                    <label for="Rua">
+                        <input type="text" name="nRua" id="nRua" required placeholder="Nome da rua:">
+                    </label>
+                </div>
+                <div class="form-input">
+                    <label for="nome">
+                        <input type="password" name="nome" id="senha" required placeholder="Senha:">
+                    </label> 
+                </div>
+                <div class="form-input">
+                    <label for="cnome">
+                        <input type="password" name="cnome" id="confirmar_senha" required placeholder="Confirme sua senha:">
+                    </label>
                 </div>
             </div>
             <div class="submit" name="submit">

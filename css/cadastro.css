@@ -46,7 +46,7 @@ h1{
     gap: 13px;
 }
 
-input{
+input, select{
     width: 100%;
     background-color: #09090B;
     border-radius: 10px;
