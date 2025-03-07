@@ -25,4 +25,6 @@ Começar a fazer e estudar os servidores em sql lite, pra poder fazer essa aplic
 -Responsividade
 -Bloco de notas
 -bloco de notas para o moba
--Data base focado em js ou python a descidir 
+-Data base focado em Java com sql
+-Fazer dps nos formulários medir o tamanho máximo de cada campo para poder colocar no esquema do banco de dados.
+-Fazer a parte de buscar o cep

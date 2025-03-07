@@ -4,3 +4,5 @@
 const submit = document.querySelector('#submit_form').onclick = function () {
     document.querySelector('form').action = "./agenda.html"
 }
+
+//fazer a verificação de todos os modos possíveis.
