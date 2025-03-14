@@ -30,3 +30,9 @@ Começar a fazer e estudar os servidores em sql lite, pra poder fazer essa aplic
 -Começar a mecher no tailwind
 -Melhorar o meu java 
 -Ver as melhores libs pra isso
+
+# O que precisa ser melhorado
+===
+=A fazer
+-Melhorar o estilo da tela de login
+-Colocar o asterisco vermelho para os campos obrigatórios
