@@ -2,10 +2,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Chrome",
+            "name": "Launch OperaGx",
             "request": "launch",
             "type": "chrome",
-            "url": "http://127.0.0.1:5500/html/cadastro.html",
+            "url": "file:///C:/Users/josef/OneDrive/Documentos/GitHub/To-do-list/html/cadastro.html",
             "webRoot": "${workspaceFolder}"
         }
     ]

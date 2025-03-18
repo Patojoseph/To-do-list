@@ -14,12 +14,12 @@
             <div class="inputs">
                 <div class="form-input" name="name" id="nome">
                     <label for="name">
-                        <input type="text" name="name" id="input_nome" required placeholder="Nome:">
+                        <input type="text" name="name" class="input-form" id="input_nome" required placeholder="Nome:">
                     </label>
                 </div>
                 <div class="form-input" name="cpf" id="cpf">
                     <label for="cpf">
-                        <input type="text" name="cpf" id="cpf" required placeholder="CPF:">
+                        <input type="text" name="cpf" class="input-form" id="cpf" required placeholder="CPF:">
                     </label>
                 </div>
                 <div class="form-input" name="estadoCivil" id="estadoCivil">
@@ -63,25 +63,66 @@
                 </div>
                 -->
                 <!--Fazer uma separação para o endereço, só pra que fique mais bonitinho no final-->
-                <div class="form-input" id="endereco">
+                <div class="form-input" id="rua">
                     <label for="Rua">
                         <input type="text" name="nRua" id="nRua" required placeholder="Nome da rua:">
                     </label>
+                </div>
+                <div class="form-input" id="number">
                     <label for="Número">
                         <input type="Number" name="cNumber" required placeholder="Número da casa: ex 4551" maxlength="4">
                     </label>
+                </div>
+                <div class="form-input" id="complemento">
                     <label for="complemento">
                         <input type="text" name="complemento" id="complemento" placeholder="Complemento: ">
                     </label>
+                </div>
+                <div class="form-input" id="biarro">
                     <label for="bairro">
                         <input type="text" name="biarro" id="bairro" required placeholder="Bairro: ">
                     </label>
+                </div>
+                <div class="form-input" id="cidade">
                     <label for="cidade">
                         <input type="text" name="cidade" id="cidade" required placeholder="Cidade: ">
                     </label>
+                </div>
+                <div class="form-input" id="estados">
                     <label for="estado">
-                        <!--Colocar uma api pra poder puxar os estados ou alguma bliblioteca-->  
+                        <select id="address_state" class="form-control" name="address_state" >
+                            <option selected>Escolher...</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goías</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraíma</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>  
                     </label>
+                </div>
+                <div class="form-input" id="CEP">
                     <label for="CEP">
                         <!--Colocar mais opções e aqui adicionar as coisas de java para poder buscar o cep da pessoa-->
                         <input type="text" name="cep" id="cidade" required placeholder="CEP: ">
