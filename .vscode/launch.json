@@ -5,7 +5,7 @@
             "name": "Launch OperaGx",
             "request": "launch",
             "type": "chrome",
-            "url": "file:///C:/Users/josef/OneDrive/Documentos/GitHub/To-do-list/html/cadastro.html",
+            "url": "file:///C:/Users/josefrancisco_icjr/Documents/GitHub/To-do-list/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
