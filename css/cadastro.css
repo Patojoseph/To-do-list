@@ -85,4 +85,8 @@ a{
     text-decoration: none;
 }
 
+.error{
+    border-color: #c01b1be8;
+}
+
 /*Fazer dps um deseing responsível nessa parte*/
